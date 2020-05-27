@@ -1,0 +1,18 @@
+**WEB PAGE CHECKLIST - DESIGN**
+Page uses correct branding and template
+Confirm featured image is correct
+Check responsive design and hidden/shown elements
+Page has correct nav, header and footer elements
+Form styling (including privacy line) is correct
+
+**WEB PAGE CHECKLIST - DEV**
+Check that any JS expiration dates are set correctly
+Move any appropriate on-page CSS
+Cross-browser test (SharpSpring Favorites Preselect) for high traffic pages
+Ensure page speed is optimized (yslow)
+No broken links, including anchor links
+Confirm proper use of semantic structure (https://yoast.com/headings-use/)
+Index/follow settings are correct
+URL redirects are in place (if new page is replacing old page)
+Form submits properly and all confirmation pages are correct (Incognito)
+Notify SEO team of any relevant updates
