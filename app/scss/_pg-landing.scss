@@ -1,0 +1,240 @@
+.acuity-arrow {
+  position:absolute;
+  width: 91px;
+  margin-left: 18%;
+  margin-top: -90px;
+  z-index:999;
+}
+ #demoForm {
+  border: none;
+}
+
+/* ----------------------------------------------------------------
+  section seperator big triangle
+-----------------------------------------------------------------*/
+
+.big-triangle:before {
+  right: 50%;
+  border-right: 1000px solid transparent;
+  border-left: 1000px solid;
+}
+
+.big-triangle:after {
+  left: 50%;
+  border-left: 1000px solid transparent;
+  border-right: 1000px solid;
+}
+
+.big-triangle:after, .big-triangle:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  z-index: 100;
+  border-bottom: 100px solid $color-white;
+}
+
+/******************************************************
+
+  Landing Page Styles
+
+******************************************************/
+
+
+.page-template-landing-page {
+  #footer {
+    display:none!important;
+  }
+  .myform h3 {
+    font-size: 30px;
+  }
+  h5 {
+    margin-bottom: 30px;
+  }
+  #page-title {
+    padding: 5% 0 3%;
+  }
+    //// General Styles
+  .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+    /*margin-bottom: 0 !important;*/
+  }
+  .vc_col-has-fill>.vc_column-inner, .vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_vc_row>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_vc_row_inner>.vc_row>.vc_vc_column_inner>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_vc_column_inner>.vc_column_container>.vc_column-inner, .vc_section.vc_section-has-fill, .vc_section.vc_section-has-fill+.vc_row-full-width+.vc_section, .vc_section.vc_section-has-fill+.vc_section {
+    padding-top: 0 ;
+  }
+  //// Nav and Header
+  #topbar {
+    display: none;
+  }
+  .nav-main-menu-responsive {
+    display: none !important;
+  }
+  #header {
+    min-height: 50px;
+    .navigation-wrap {
+      display: none !important;
+    }
+    #logo {
+      text-align: center;
+      img {
+        margin: 10px auto;
+        max-height: 30px;
+        display: inline-block;
+      }
+      .tagline {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0.75em;
+        margin-left: 5px;
+        color: #5d5d5e;
+        border-left: 1px solid rgba(93, 93, 94, 0.25);
+        padding-left: 10px;
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  }
+  //// Top Row
+  .overflow {
+    overflow: visible !important;
+    .wpb_content_element {
+      /*margin:0;*/
+    }
+    .wpb_video_widget {
+      border: 3px solid white;
+      box-shadow: rgba(46, 38, 46, 0.6) 0px 0px 40px;
+      iframe {
+        border: none !important;
+      }
+    }
+  }
+  //inline list row
+  .inlne-list-row {
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        float: left;
+        font-size: 20px;
+        padding: 0 1em;
+        width: 33%;
+        text-align: center;
+        color: #649726;
+        margin-bottom: 0;
+      }
+    }
+  }
+  //Icon Box Row
+  .icon-box-row {
+    .icon-box {
+      padding: 2em 0;
+      h3 {
+        font-size: 30px !important;
+        font-weight: 300;
+      }
+    }
+  }
+  //Icon Box
+  .icon-box {
+    h3 {
+      font-weight: 400;
+      font-size: 1.6rem !important;
+    }
+  }
+  // Individual Icon Styles
+  .icon-box {
+    .bg-white {
+      background-color: #fff !important;
+    }
+    .icon-lt-green {
+      color: $color-lt-lime-green !important;
+    }
+    .icon-white {
+      color: #fff;
+    }
+    .bg-orange {
+      background-color: $color-md-orange !important;
+    }
+    .bg-dk-green {
+      background-color: $color-dk-leaf-green !important;
+    }
+    .large > p {
+      font-weight: 400;
+      margin: 0 0 20px 110px;
+      color: $color-dk-leaf-green;
+    }
+  }
+  //Alternative Landing Page
+  .logos-alternative {
+    background: white;
+    border: solid 3px #816f90;
+    padding: 4% 5% 4%;
+    border-radius: 10px;
+    overflow: visible;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    margin-top: -50px !important;
+    z-index: 999;
+  }
+}
+
+//Media Queries
+
+@media(max-width:991px) {
+  
+  .page-template-landing-page  {
+    #header {
+      #logo {
+        float: none;
+        img {
+          margin: 20px auto;
+          max-height: 50px;
+        }
+      }
+    }
+    .logos-alternative {
+      position: static;
+      width: 100%;
+    }
+  }
+}
+
+
+@media(max-width:768px) {
+  .page-template-landing-page .nav-main-menu-responsive {
+    display: block !important;
+  }
+  .page-template-landing-page  {
+    .myform {
+      position: static;
+      margin-top: 3em;
+    }
+    #header {
+      #logo {
+        img {
+          margin-left: 0;
+          position: absolute;
+          left: -10px;
+          height: 50px;
+        }
+      }
+    }
+    .logos-alternative {
+      position: static;
+      width: 100%;
+    }
+  }
+}
+
+/******************************************************************************/
+/* style to ensure the green scroll to form button for mobile shows on safari */
+@media screen and (max-width: 768px) {
+  .btn-scroll-to, .button.fullwidth.btn-scroll-to {
+    overflow: unset !important;
+  }
+}
+/* End of the style to ensure the green scroll to form button for mobile shows on safari */
+/*****************************************************************************************/
+
+
+

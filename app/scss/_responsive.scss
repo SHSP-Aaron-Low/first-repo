@@ -1,0 +1,110 @@
+
+@media (min-width: 991px) {
+  .lg-hide {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .md-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .sm-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .xm-hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .five-columns.vc_row .vc_col-sm-2 {
+    float: left;
+    width: 18.8%;
+    padding: 0;
+    margin-right: 1.5%;
+    min-height: 0;
+  }
+  .five-columns.vc_row .vc_col-sm-2:nth-last-child(2) {
+    margin-right: 0;
+  }
+}
+
+
+/* Responsive Typography */
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 46px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  h1.xl {
+    font-size: 40px;
+  }
+
+  h1, .jumbotron h1, .custom-heading h1, .page-title h1 {
+    font-size: 40px;
+  }
+
+  h2, .custom-heading h2 {
+    font-size: 24px;
+  }
+
+  .custom-heading h2 + span, .custom-heading h2 + span.lead {
+    font-size: 13px!important;
+  }
+
+  h3, .icon-box.small > h3, .icon-box.large > h3, .post-title h3 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .custom-heading h3 {
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  h4, .footer-content .widget-title, .custom-heading h4 {
+    font-size: 16px!important;
+  }
+
+  h5, .custom-heading h5 {
+    font-size: 18px;
+  }
+
+  h6, .custom-heading h6 {
+    font-size: 14px;
+  }
+  .testimonial .testimonial-description > p, .jumbotron.jumbotron-large p, #footer a, a, .pricing-cost sup, .pricing-cost sub, .pricing-question p {
+    font-size: 13px!important;
+  }
+
+  .pricing-cost p {
+    font-size: 50px;
+  }
+
+}
+
+/* Responsive Footer */
+
+@media screen and (max-width: 768px) {
+    #footer .social-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }    
+}

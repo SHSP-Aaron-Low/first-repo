@@ -1,0 +1,75 @@
+.search-partners label {
+	display: none;
+}
+input[type="text"] {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Roboto;
+  font-size: 14px;
+  margin-bottom: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+input#partner-search {
+	color: rgba(0,0,0,0.75);
+	font-family: Roboto;
+	font-size: 14px;
+	max-width: 100%;
+	width: 50%;
+	height: 50px;
+	padding: 10px;
+	margin: 0 auto 25px;
+	display: block;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	border: 1px solid $color-md-gray;
+}
+input:focus#partner-search {
+	border: 1px solid $color-lt-lime-green;
+	outline: 0;
+}
+#partnersearchResults > li, #partnersearchResults > li address {
+  margin: 0px;
+}
+.search-results {
+  h4 {
+    color: $color-dk-gray;
+    font-size: 23px;
+  }
+}
+
+#searchRadius {
+  color: $color-dk-gray!important;
+}
+
+.partner-search-results{position:absolute;right:0;z-index:100;width:240px;height:500px;overflow:auto;background:rgba(255, 255, 255, 0.9);padding:0 10px;display:none;}
+.partner-search-results.active{display:block;}
+
+#map_canvas {
+	border: 1px solid $color-md-gray;
+}
+
+@media only screen and(max-width: 767px) {
+	input#partner-search {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:40em){.partner-search-results.active{display:none !important;}
+}
+.partner-search-results ul{list-style:none;margin-left:0;}
+.partner-search-results ul li.result-list-item{border-top:1px solid #cccccc;padding:10px 10px 0;font-size:13px;list-style:none;margin-top:10px;}
+.partner-search-results ul li.certified{padding-left:52px;position:relative;background:#fff;}
+.partner-search-results ul li.certified.certified-platinum:before, .partner-search-results ul li.certified.certified-gold:before, .partner-search-results ul li.certified.certified-silver:before{content:"";background:url(img/CertificationBadge_single_05.png) no-repeat 0 0;height:45px;width:45px;display:block;position:absolute;left:5px;background-size:100%;}
+.partner-search-results ul li.certified.certified-gold:before{background:url(img/CertificationBadges-gold-circle.svg) no-repeat 0 0;}
+.partner-search-results ul li.certified.certified-silver:before{background:url(img/CertificationBadges-silver-circle.svg) no-repeat 0 0;}
+.partner-search-results ul li .cert-type{display:block;font-size:12px;color:#4A4A4A;font-weight:bold;}
+.partner-search-results .workType{font-size:11px;text-transform:uppercase;margin-right:5px;margin-left:10px;float:left;}
+.partner-search-results .desc-trigger{font-size:12px;text-align:right;display:block;}
+.partner-search-results .agency-description{display:none;margin-left:10px;}
+.partner-search-results .agency-description p{font-size:13px;margin-top:10px;}
+.partner-search-results .agency-description.open{display:block;}
+

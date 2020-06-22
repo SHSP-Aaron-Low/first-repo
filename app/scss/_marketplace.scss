@@ -1,0 +1,372 @@
+
+.modal-content {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10%;
+  box-shadow: none !important;
+}
+
+.modal-title {
+  color: #ffffff;
+}
+
+.modal-header {
+  padding: 5px 0;
+}
+
+.modal-header button span {
+  color: #ffffff;
+  border: 1px #ffffff solid;
+  border-radius: 50%;
+  padding: 0 7px;
+  text-shadow: none;
+}
+
+.modal-title::after {
+  border: none !important;
+}
+
+.marketplace-image {
+  padding: 40px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+@media(max-width:1194px) {
+  .marketplace-image {
+    padding: 20px;
+  }
+}
+
+@media(max-width:991px) {
+  .marketplace-image {
+    padding: 40px;
+  }
+
+  .portfolio sidebar-left #search-3 {
+    clear: both;
+    float: none;
+  }
+  .app_marketplace_sidebar_container {
+    display: none;
+  }
+}
+
+.marketplace-image img {
+  background-color: #ffffff;
+}
+
+.effect.effect-default p {
+  //margin-left: -38px !important;
+}
+
+.portfolio-filter li {
+  margin-bottom: 0px;
+  padding: 10px 0 !important;
+}
+
+.portfolio-filter li {
+  text-transform: uppercase;
+  font-weight: normal !important;
+}
+
+.app_marketplace_sidebar_container {
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  max-width: 200px;
+}
+
+.portfolio-item .portfolio-description {
+  max-height: 80px;
+}
+
+.marketplace-image img {
+  padding: 10px;
+  border: 2px solid #e1e1e1;
+}
+
+#marketplace-filter a .fa {
+  color: #3a3042;
+}
+
+#marketplace-filter .wiggle a {
+  color: #111;
+}
+
+#marketplace-filter .wiggle.ptf-active a {
+  color: $color-md-lime-green;
+}
+
+.app_marketplace_sidebar_container {
+  font-size: 14px;
+}
+
+.app_marketplace_sidebar_container .widget-divider {
+  line-height: 3px;
+}
+
+.app_marketplace_sidebar_container .widget-divider::after {
+  border-top: 3px solid $color-md-lime-green;
+  content: "";
+  display: block;
+  margin-top: 14px;
+  width: 60px;
+}
+
+.portfolio-item .portfolio-description p a.filter-category {
+  font-size: 9px;
+}
+
+.filter_description_icon {
+  padding: 0 5px;
+}
+
+.filter_description {
+  overflow: visible;
+  display: none;
+  min-width: 200px;
+  position: absolute;
+  color: #fff;
+  background-color: #000;
+  padding: 5px;
+  text-transform: none;
+  top: 0px;
+  margin-left: 5px;
+  z-index:999;
+}
+
+.filter_description p{
+  margin:0;
+  color:#fff;
+  background-color:#000000;
+  padding:2px 7px;
+}
+
+.app-marketplace-search-control {
+  height: 44px !important;
+}
+
+.image-cell-150 {
+  display: table-cell;
+  vertical-align: middle;
+  height: 150px;
+  padding: 20px;
+  width: 100vw;
+}
+
+.contact-header {
+  margin-top: 30px;
+}
+
+.mobile_filter_select {
+  color: #000000;
+}
+
+.app_mobile_filter {
+  /*border: 1px solid #f5f5f5;*/
+  border-radius: 0px;
+  display: none;
+}
+
+.app_mobile_filter:after {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid $color-md-lime-green;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  content: "";
+  z-index: 99;
+  cursor: pointer;
+}
+
+.app_mobile_optgroup {
+  font-weight: bold;
+}
+
+.app_mobile_opt {
+  font-weight: 300;
+  padding: 6px 0;
+}
+
+.app_mobile_cat_opt {
+  padding: 6px 0;
+}
+
+.app_mobile_cat_opt:first-child:hover {
+  color: #555;
+  cursor: default !important;
+}
+
+.app_mobile_cat_opt:first-child:after {
+  content: "...";
+}
+
+.app_mobile_filter select option:not(.app_mobile_optgroup) {
+  padding-left: 10px;
+}
+
+.app_mobile_opt:hover, .app_mobile_optgroup:hover, .app_mobile_cat_opt:hover {
+  cursor: pointer;
+}
+
+.app_mobile_optgroup_first {
+  margin-bottom: 10px;
+}
+
+.app_mobile_optgroup_last {
+  margin: 10px 0;
+}
+
+#app_marketplace_filter_selector, #app_category_filter_selector {
+  display: none;
+  border: 1px solid $color-md-gray;
+  border-radius: 0px;
+  position: relative;
+  top: -44px;
+  z-index: 100;
+  background: $color-lt-gray;
+}
+
+#app_marketplace_filter_select_line, #app_category_filter_select_line, #features_filter_select_line, .sub-nav-as-dropdown-select-line {
+  border: 1px solid $color-lt-gray;
+  position: relative;
+  z-index: 99;
+  background: none;
+}
+
+#features_filter_select_line, .sub-nav-as-dropdown-select-line {
+	border-color: #e0e0e1;
+	background: #f5f5f5;
+}
+
+#app_marketplace_filter_select_line:hover, #app_category_filter_select_line:hover  {
+  cursor: pointer;
+  background: $color-lt-gray;
+}
+#features_filter_select_line:hover,
+.sub-nav-as-dropdown-select-line:hover {
+	cursor: pointer;
+}
+
+.app_mobile_cat_opt:hover {
+  color: #84c340;
+}
+
+.app_category_filter {
+  position: absolute;
+  max-width: 400px;
+  top: -10px;
+  display: block;
+  width: 91%;
+  float: left;
+  margin: 5px 3% 20px 0;
+  overflow: hidden;
+}
+
+ul.portfolio-filter-transparent li {
+  display: none;
+}
+ul.portfolio-filter li.wiggle.ptf-active, ul.portfolio-filter li.wiggle:hover {
+  padding-left: 10px !important;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .portfolio-item {
+    width: 215px !important;
+    max-width: 215px;
+  }
+  .marketplace-image {
+    padding: 40px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+	#search_apps_form .input-group {
+		width: 91%;
+	}
+
+	.app_mobile_filter {
+		display: block;
+		width: 91%;
+		float: left;
+		margin: 5px 3% 20px 0;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.app_mobile_filter.no-right-pad {
+		margin: 5px 0px 5px 0;
+	}
+
+	.app_category_filter {
+		position: relative;
+		left: unset !important;
+		max-width: unset;
+		top: unset;
+	}
+
+	.selectedCategory {
+		display: none;
+	}
+
+	p.info {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 479px) {
+  .app_mobile_filter {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .marketplace-image {
+    width: 150px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    float: left !important;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .portfolio-description {
+    width: 30% !important;
+    float: left !important;
+  }
+
+  .portfolio-description p a {
+    font-size: 9px !important;
+  }
+
+  .portfolio-description h4 {
+    font-size: 20px !important;
+  }
+
+  .portfolio-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0!important;
+  }
+
+  .portfolio [data-isotope-col="1"] .portfolio-item {
+    margin-bottom: 0px !important;
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  .app_mobile_filter select {
+    padding-left: 2px !important;
+  }
+
+  #search_apps_form .input-group {
+    width: 94%;
+  }
+
+}

@@ -1,0 +1,506 @@
+/* DEFAULT HEX COLOR: $color-md-lime-green */
+/* CHANE IT BY REPLEACING THE VALUE ABOVE */
+
+
+$color-lt-orange: #f17232;
+$color-md-orange: #e56d30;
+
+$color-lt-lime-green: #8ccf44;
+$color-md-lime-green: #84c340;
+
+$color-lt-leaf-green: #34b162;
+$color-md-leaf-green: #3eab66;
+$color-dk-leaf-green: #13592d;
+
+$color-lt-robin-blue: #40acc3;
+$color-md-robin-blue: #0c6376;
+$color-dk-robin-blue: #0a5363;
+
+$color-lt-purple: #6a5879;
+$color-md-purple: #50475b;
+$color-dk-purple: #3a3042;
+
+$color-lt-gray: #f5f5f5;
+$color-md-gray: #e0e0e1;
+$color-dk-gray: #666468;
+
+$color-white: #fff;
+
+$color-red: #981a1a;
+
+//Gradients
+
+.gradient-gray {
+  border-width: 2px;
+  border-color: $color-lt-gray;
+  border-style: solid;
+  background: #474649; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #474649 4%, #615f63 40%, #7a787d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #474649 4%,#615f63 40%,#7a787d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #474649 4%,#615f63 40%,#7a787d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#474649', endColorstr='#7a787d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding: 5px;
+}
+
+.gradient-lt-dk-gray-with-ss-while-logo {
+  background-color: rgb(245,245,245);  /* Old browsers */
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2.png) top left no-repeat;
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2.png) top left no-repeat, -moz-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(224,224,225,1) 100%);
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2.png) top left no-repeat, -webkit-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(224,224,225,1) 100%);
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2.png) top left no-repeat, -o-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(224,224,225,1) 100%);
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2.png) top left no-repeat, linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(224,224,225,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F5F5F5",endColorstr="#E0E0E1",GradientType=1);
+  background-size: auto 100%, 100% auto;
+}
+
+.dk-lg-green-gradient {
+  background: rgb(85,127,41);
+  background: -moz-linear-gradient(120deg, rgba(85,127,41,1) 27%, rgba(132,195,64,1) 83%);
+  background: -webkit-linear-gradient(120deg, rgba(85,127,41,1) 27%, rgba(132,195,64,1) 83%);
+  background: linear-gradient(120deg, rgba(85,127,41,1) 27%, rgba(132,195,64,1) 83%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#557f29",endColorstr="#84c340",GradientType=1);
+}
+
+.dk-lg-green-gradient-saturated {
+  background: rgb(85,127,41);
+  background: -moz-linear-gradient(120deg,hsla(142, 100%, 25%, 1) 27%,#75AD40 83%);
+  background: -webkit-linear-gradient(120deg,hsla(142, 100%, 25%, 1) 27%,#75AD40 83%);
+  background: linear-gradient(120deg,hsla(142, 100%, 25%, 1) 27%,#75AD40 83%);
+}
+
+.gradient-dk-lt-green-with-ss-dark-logo {
+  background-color: rgb(5,100,39);  /* Old browsers */
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2_inverse2.png) top left no-repeat;
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2_inverse2.png) top left no-repeat, -moz-linear-gradient(120deg, rgba(5,100,39,1) 0%, rgba(75,144,1,1) 100%);
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2_inverse2.png) top left no-repeat, -webkit-linear-gradient(120deg, rgba(5,100,39,1) 0%, rgba(75,144,1,1) 100%);
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2_inverse2.png) top left no-repeat, -o-linear-gradient(120deg, rgba(5,100,39,1) 0%, rgba(75,144,1,1) 100%);
+  background: url(https://wp.static-cdn-shsp.com/wp-content/uploads/2019/12/SS_Logo_Mark_R2_inverse2.png) top left no-repeat, linear-gradient(120deg, rgba(5,100,39,1) 0%, rgba(75,144,1,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#056427",endColorstr="#4b9001",GradientType=1);
+  background-size: auto 100%, 100% auto;
+}
+
+.gradient-dk-lt-gray {
+  padding: 2em 1em;
+  border-width: 2px;
+  border-color: rgb(245, 245, 245);
+  border-style: solid;
+  box-shadow: 2.487px -1.678px 13px 0px rgba(0, 0, 0, 0.26);
+  background: #474649; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #474649 4%, #615f63 40%, #7a787d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #474649 4%,#615f63 40%,#7a787d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #474649 4%,#615f63 40%,#7a787d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#474649', endColorstr='#7a787d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.gradient-dk-lt-gray-vertical {
+  background: #79777c; /* Old browsers */
+  background: -moz-linear-gradient(top, #79777c 0%, #46454a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #79777c 0%,#46454a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #79777c 0%,#46454a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79777c', endColorstr='#46454a',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-dk-prpl-dk-green {
+  background-color: #3a3042;
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat;
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -moz-linear-gradient(65deg, #3a3042 50%, #2e5a6a 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -webkit-gradient(65deg, #3a3042 50%,#2e5a6a 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -webkit-linear-gradient(65deg, #3a3042 50%,#2e5a6a 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -o-linear-gradient(65deg, #3a3042 50%,#2e5a6a 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, linear-gradient(65deg, #3a3042 50%,#2e5a6a 100%);
+  background-size: auto 100%, 100% auto;
+}
+
+.gradient-dk-prpl-dk-green-mobile {
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat;
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -moz-linear-gradient(65deg, #3a3042 50%, #2e5a6a 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -webkit-gradient(65deg, #3a3042 50%,#2e5a6a 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -webkit-linear-gradient(65deg, #3a3042 50%,#2e5a6a 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -o-linear-gradient(65deg, #3a3042 50%,#2e5a6a 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, linear-gradient(65deg, #3a3042 50%,#2e5a6a 100%);
+  background-size: auto 100%, 100% auto;
+}
+
+.gradient-green-logo {
+  background-color: #33b062;
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat;
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -moz-linear-gradient(65deg, #33b062 50%, #84c340 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -webkit-gradient(65deg, #33b062 50%,#84c340 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -webkit-linear-gradient(65deg, #33b062 50%,#84c340 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, -o-linear-gradient(65deg, #33b062 50%,#84c340 100%);
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat, linear-gradient(65deg, #33b062 50%,#84c340 100%);
+  background-size: auto 100%, 100% auto;
+}
+
+.gradient-purple-blue {
+  padding: 2em 1em;
+  background: $color-dk-purple; /* Old browsers */
+  background: -moz-linear-gradient(170deg, $color-md-robin-blue 4%, $color-dk-purple 50%, $color-dk-purple 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(170deg, $color-md-robin-blue 4%,$color-dk-purple 50%,$color-dk-purple 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(170deg, $color-md-robin-blue 4%,$color-dk-purple 50%,$color-dk-purple 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-md-robin-blue', endColorstr='$color-dk-purple',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.gradient-green-blue {
+   background: #00697f;
+   background: -moz-linear-gradient(40deg, #00697f 0%, #00697f 35%, #33b062 59%, #33b062 100%);
+   background: -webkit-linear-gradient(40deg, #00697f 0%,#00697f 35%,#33b062 59%,#33b062 100%);
+   background: linear-gradient(40deg, #00697f 0%,#00697f 35%,#33b062 59%,#33b062 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00697f', endColorstr='#33b062',GradientType=1 );
+ }
+
+.gradient-green, {
+  background: #33b062;
+  background: -moz-linear-gradient(-40deg, #84c340 0%, #84c340 35%, #33b062 65%, #33b062 100%);
+  background: -webkit-linear-gradient(-40deg, #84c340 0%, #84c340 35%, #33b062 65%, #33b062 100%);
+  background: linear-gradient(-40deg, #84c340 0%, #84c340 35%, #33b062 65%, #33b062 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84c340', endColorstr='#33b062',GradientType=1 );
+}
+
+.gradient-green2018 {
+  background-color:#3a3042;
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat;
+  background:url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat,-moz-linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  background:url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat,-webkit-linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+
+  background:url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat,linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-md-robin-blue',endColorstr='$color-dk-purple',GradientType=1);
+  background-size: auto 100%,100% auto;
+}
+
+.gradient-lt-purple-lt-green {
+  background: #c5e3a5;
+  background: -moz-linear-gradient(-40deg, #9987a8 0%, #9987a8 35%, #c5e3a5 65%, #c5e3a5 100%);
+  background: -webkit-linear-gradient(-40deg, #9987a8 0%, #9987a8 35%, #c5e3a5 65%, #c5e3a5 100%);
+  background: linear-gradient(-40deg, #9987a8 0%, #9987a8 35%, #c5e3a5 65%, #c5e3a5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9987a8', endColorstr='#c5e3a5',GradientType=1 );
+}
+
+/*Gradient dark green to light green with ss icon overlay*/
+.gradient-dk-green-lt-green-ss-icon-lt-overlay {
+  background-color:$color-dk-purple;
+  background: url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat;
+  background:url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat,-moz-linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  background:url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat,-webkit-linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  background:url(https://ss-lp-uploads.s3.amazonaws.com/ffdb25c1-6f14-486a-8925-cb412b8ad4c0.png) top left no-repeat,linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-md-robin-blue',endColorstr='$color-dk-purple',GradientType=1);
+  background-size: auto 100%,100% auto;
+}
+
+/*Gradient dark green to light green*/
+.gradient-dk-green-lt-green {
+  background-color:$color-dk-purple;
+  background: -moz-linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  background: -webkit-linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  background: linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-md-robin-blue',endColorstr='$color-dk-purple',GradientType=1);
+}
+
+.gradient-beige {
+  background: #e0e0e1;
+  background: -moz-linear-gradient(40deg, #e0e0e1 0%, #e0e0e1 35%, #f5f5f5 59%, #f5f5f5 100%);
+  background: -webkit-linear-gradient(40deg, #e0e0e1 0%,#e0e0e1 35%,#f5f5f5 59%,#f5f5f5 100%);
+  background: linear-gradient(40deg, #e0e0e1 0%,#e0e0e1 35%,#f5f5f5 59%,#f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e1', endColorstr='#f5f5f5',GradientType=1 );
+}
+
+.bg-color-md-leaf-green {
+  background: $color-md-leaf-green;
+}
+
+::-moz-selection {
+  background: $color-md-lime-green;
+  color: $color-white;
+  text-shadow: none;
+}
+::selection {
+  background: $color-md-lime-green;
+  text-shadow: none;
+  color: $color-white;
+}
+.text-colored, h1.text-colored, h2.text-colored, h3.text-colored, h4.text-colored, h5.text-colored, h6.text-colored, .color-font, .color-font a, .widget-tweeter li a, .widget-twitter li a, p.text-colored, .heading.heading-colored h1, .heading.heading-colored h2, .text-colored span {
+  color: $color-md-lime-green !important;
+}
+.text-color-dk-leaf-green {
+  color: $color-dk-leaf-green;
+}
+.progress-bar-container.color .progress-bar {
+  background-color: $color-md-lime-green;
+  color: $color-white;
+}
+.blockquote-color {
+  background-color: $color-md-lime-green;
+  color: $color-white;
+}
+.blockquote-color > small {
+  color: $color-white;
+}
+/*buttons*/
+.button.primary, .btn.btn-primary {
+  background-color: $color-lt-lime-green;
+  border-color: $color-md-lime-green;
+  color: $color-white;
+}
+
+.button.secondary, .btn.btn-secondary {
+  background-color: $color-lt-orange;
+  border-color: $color-md-orange;
+  color: $color-white;
+}
+/*go to top*/
+
+.gototop-button {
+  background-color: $color-md-lime-green;
+}
+.gototop-button {
+  color: $color-white;
+}
+nav .main-menu .dropdown-menu {
+  border-color: $color-md-lime-green;
+}
+
+#header:not(.header-transparent) #mainMenu > ul > li:hover > a,
+#header:not(.header-transparent) #mainMenu > ul > li.current-menu > a { color: $color-md-lime-green; }
+
+#topbar.topbar-colored {
+  background-color: $color-md-lime-green;
+}
+/*vertical-dot-menu */
+#vertical-dot-menu a:hover .cd-dot, #vertical-dot-menu a.active .cd-dot {
+  background-color: $color-md-lime-green;
+}
+/*scrollspy nav */
+/*.sidebar-menu ul.nav-tabs li, */
+.sidebar-menu ul.nav-tabs li:hover .sidebar-menu ul.nav-tabs li a, .sidebar-menu ul.nav-tabs li a:hover, .sidebar-menu ul.nav-tabs li.active a, .sidebar-menu ul.nav-tabs li.active a:hover {
+  color: $color-white;
+  background: $color-md-lime-green;
+  border: 1px solid $color-md-lime-green;
+}
+
+/*Bootstrap defaults overrides*/
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  background-color: $color-md-lime-green;
+  border-color: $color-md-lime-green;
+}
+.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
+  color: $color-white;
+}
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+  color: $color-md-lime-green;
+}
+pre {
+  background-color: $color-lt-gray;
+  border: 1px solid $color-md-gray;
+}
+.alert {
+  border-left-width: 10px;
+  border-radius: 0;
+}
+.alert-success {
+  background-color: $color-lt-leaf-green;
+  border-color: $color-md-leaf-green;
+}
+.alert-info {
+  background-color: $color-md-robin-blue;
+  border-color: $color-md-robin-blue;
+}
+.alert-warning {
+  background-color: #f6b63a;
+  border-color: #ffcd51;
+}
+.alert-danger {
+  background-color: $color-md-orange;
+  border-color: $color-lt-orange;
+}
+.alert, .alert a.alert-link {
+  color: $color-white;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: $color-md-lime-green;
+  border-color: $color-md-lime-green;
+  color: $color-white;
+}
+.pagination > li > a:hover i, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  color: $color-white;
+}
+/*navs*/
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: $color-md-lime-green;
+  color: $color-white;
+}
+/*Typography*/
+
+a:hover {
+  color: $color-md-lime-green;
+}
+/*dropcat & highlight*/
+.dropcap.dropcap-colored, .dropcap.dropcap-colored a, .highlight.highlight-colored, .highlight.highlight-colored a {
+  background-color: $color-md-lime-green;
+  color: $color-white;
+}
+/*timeline*/
+.timeline.timeline-colored .timeline-circles:before, .timeline.timeline-colored .timeline-circles:after, .timeline.timeline-colored .timeline-date, .timeline.timeline-colored:before {
+  background-color: $color-md-lime-green;
+  color: $color-white;
+}
+.timeline.timeline-colored li .timeline-block:before {
+  border-color: transparent $color-md-lime-green;
+}
+.timeline.timeline-colored .timeline-block-image {
+  border-color: $color-md-lime-green;
+}
+.timeline.timeline-colored.timeline-simple .timeline-date {
+  background-color: $color-white;
+  border: 1px solid $color-md-lime-green;
+  color: $color-md-lime-green;
+}
+/*tabs*/
+
+.border .tabs-navigation li.active a:after {
+  background: $color-md-lime-green;
+}
+/*accordions*/
+
+.breadcrumb a:hover {
+  color: $color-md-lime-green;
+}
+/*color*/
+
+.accordion.color .ac-item .ac-title {
+  background: $color-md-lime-green;
+  color: $color-white;
+}
+.accordion.color-border-bottom .ac-item .ac-title {
+  border-bottom: 1px dotted $color-md-lime-green;
+}
+.accordion.color-border-bottom .ac-item .ac-title:before {
+  color: $color-md-lime-green;
+}
+/*ICONS*/
+
+.icon-box.color .icon i {
+  background: $color-md-lime-green;
+  color: $color-white;
+}
+.icon-box.color .icon i:after {
+  box-shadow: 0 0 0 3px $color-md-lime-green;
+}
+.icon-box.border.color .icon, .icon-box.border.color .icon i {
+  color: $color-md-lime-green;
+  border-color: $color-md-lime-green;
+}
+.icon-box.fancy.color .icon i {
+  color: $color-md-lime-green;
+  background-color: transparent;
+}
+/*FONT AWESOME ICONS*/
+
+.fontawesome-icon-list .fa-hover a:hover {
+  background-color: $color-md-lime-green;
+}
+/*lists icons*/
+
+ul.icon-list li i {
+  color: $color-md-lime-green;
+}
+/* ----------------------------------------------------------------
+    Backgrounds
+-----------------------------------------------------------------*/
+
+.background-colored {
+  background-color: $color-md-lime-green !important;
+}
+/* ----------------------------------------------------------------
+    NPROGRESS
+-----------------------------------------------------------------*/
+
+#nanobar-progress div {
+  background: $color-md-lime-green !important;
+}
+/* ----------------------------------------------------------------
+    PORTFOLIO
+-----------------------------------------------------------------*/
+.portfolio-filter li.wiggle.ptf-active, 
+.portfolio-filter li.wiggle:hover {
+  background-color: $color-lt-gray;
+  color: $color-md-lime-green !important;
+}
+.portfolio-filter li.ptf-active {
+  color: $color-md-lime-green !important;
+}
+.portfolio-filter li:first-child,
+.portfolio-filter li:first-child:hover {
+	background-color: transparent;
+}
+.portfolio-filter li:not(.wiggle):hover {
+  color: $color-md-lime-green;
+}
+/* ----------------------------------------------------------------
+    HEADINGS
+-----------------------------------------------------------------*/
+.heading-title-border-color {
+  border-color: $color-md-lime-green;
+}
+/* ----------------------------------------------------------------
+    IMAGE BOX
+-----------------------------------------------------------------*/
+.image-box-links a {
+  background-color: $color-md-lime-green;
+}
+.image-box.effect.bleron {
+  background-color: $color-md-lime-green;
+}
+.image-block-content .feature-icon {
+  background-color: $color-md-lime-green;
+}
+.image-box.effect.bleron p.image-box-links a {
+  color: $color-md-lime-green;
+}
+/* ----------------------------------------------------------------
+    SHOP PRODUCTS
+-----------------------------------------------------------------*/
+.product .product-wishlist a:hover {
+  border-color: $color-md-lime-green;
+}
+
+/*
+Woocommerce priecfilter widget
+*/
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle{
+  background-color: $color-md-lime-green;
+}
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content{
+  background-color: $color-md-lime-green;
+}
+
+/*Tabs active color*/
+.color .tabs-navigation li.active a{
+  background: $color-md-lime-green;
+}
+
+
+//jumbotron
+
+.jumbotron.txt-dark  h1 {
+  color: $color-dk-purple;
+}
+
+.jumbotron.txt-light h1 {
+  color: $color-white;
+}
+
+/*******************************************/
+/*** Thi Part of the CSS is from the WP Page Editor for the Schedule Demo Agency Page ***/
+.resource-template-default.single-resource.confirmation .wrapper {
+  background-color:$color-dk-purple;
+  background: -moz-linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  background: -webkit-linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  background: linear-gradient(160deg, #3a3042 2%, #1e3240 8%, #557f28 75%, #84c340 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-md-robin-blue',endColorstr='$color-dk-purple',GradientType=1);
+}
+/*** END of the CSS from the WP Page Editor for the Schedule Demo Agency Page ***/
+/****************************************************************************************/

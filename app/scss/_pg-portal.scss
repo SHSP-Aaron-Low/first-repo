@@ -1,0 +1,82 @@
+.portal {
+  p {
+    font-size: 15px;
+  }
+  .ac-content ul,
+  .technical-support ul {
+    list-style: none;
+  }
+  .technical-support ul {
+    padding: 20px 0 0 0;
+    font-weight: 500;
+    i {
+      margin-right: 10px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .wpb_content_element {
+    margin: 35px 0 0;
+  }
+}
+
+.sandbox {
+  font-size: 15px;
+    i {
+      font-size: 56px;
+      border-radius: 50%;
+      border: 2px solid #84c340;
+      line-height: 120px;
+      padding: 15px;
+      color: $color-md-purple;
+    }
+    .sandbox-credential {
+      border: 1px solid #84c340;
+      padding: 1px 30px 1px 10px;
+      display: inline-block;
+      margin: 3px;
+    }
+}
+
+.social-wrap {
+  .vc_column-inner {
+    text-align: center;
+    .wpb_wrapper {
+      display: inline-block;
+    }
+  }
+}
+
+//Partner Portal Singles
+.parent-partnerportal .button {
+  display: table;
+  margin-left: 8px;
+}
+
+.parent-partnerportal h1 {
+  font-size: 40px;
+}
+
+.parent-partnerportal img, .parent-partnerportal iframe {
+  border: 2px solid $color-md-gray;
+}
+
+/* Removing Border for mega menu icons */
+#mega-menu-wrap-main-menu #mega-menu-main-menu img {
+  border: none;
+}
+
+#header #logo img {
+  border: none !important;
+}
+
+.parent-partnerportal .heading::after {
+  height: 1px;
+  border-top: 1px solid $color-lt-gray;
+  border-top-color: $color-lt-gray;
+  display: block;
+  position: relative;
+  top: 10px;
+  width: 100%;
+}

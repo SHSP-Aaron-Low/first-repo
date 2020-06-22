@@ -1,0 +1,289 @@
+/***********************************************************
+
+	Styles relating to the polo blog page template
+
+***********************************************************/
+
+#main-content,
+#news-page {
+	padding-top: 0;
+}
+
+.single-post #main-content {
+	padding-top: 0 !important;
+}
+
+#main-content .post-date {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#header.header-transparent+.page-title-video,
+#header.header-transparent+.page-title-parallax,
+#header.header-light-transparent+.page-title-video,
+#header.header-light-transparent+.page-title-parallax,
+#header.header-dark-transparent+.page-title-video,
+#header.header-dark-transparent+.page-title-parallax {
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
+
+.page-template-news-page section.content,
+.single-post section.content, .post-content
+{
+	padding-top: 50px;
+}
+
+.post-meta .post-date .post-date-month {
+	padding-bottom: 20px;
+}
+
+.single .post-autor {
+	display:none;
+}
+.author-bio-section {
+	clear: both;
+	background: $color-white;
+	padding: 0;
+	border: 1px solid $color-md-gray;
+	margin: 0 0 35px;
+	letter-spacing: .25px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-moz-box-wrap: wrap;
+	-webkit-box-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flexbox-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.author-bio-section .author-box {
+	padding: 20px 20px 10px;
+	width: 30%;
+	background: #f5f5f5;
+}
+
+.author-bio-section .author-box-title {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.author-bio-section .author-name,
+.author-bio-section .author-short-desc {
+	text-align: center;
+}
+
+.author-bio-section .author-name {
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 5px;
+	color: $color-md-lime-green;
+}
+.author-bio-section .author-short-desc {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.author-bio-section .author-img-box {
+	width: 100%;
+	text-align: center;
+	/*    margin-bottom: 10px;*/
+}
+
+.author-bio-section .author-img-box img {
+	background-color: $color-dk-purple;
+	border: 4px solid $color-dk-purple;
+	width: 100px;
+	border-radius: 50%;
+}
+
+.author-bio-section .author-desc-box {
+	border-left: 1px solid $color-md-gray;
+	padding: 20px 20px 16px;
+	width: 70%;
+}
+.author-bio-section .author-desc-box .author-details {
+	position: relative;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #000000;
+	margin-bottom: 10px;
+	max-height: 100%;
+}
+.author-bio-section .author-desc-box .author-details.collapsed {
+	overflow: hidden;
+	max-height: 117px;
+}
+.author-bio-section .author-desc-box .author-details .readMoreLink {
+	position: absolute;
+	right: 0;
+	bottom: -3px;
+	padding-left: 10px;
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+.author-bio-section .author-desc-box .author-links {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #000000;
+}
+.author-bio-section .author-desc-box .author-links a {
+	font-weight: bold;
+}
+
+.editor-picks a {
+	display: flex;
+	padding: 15px 0 0;
+	text-decoration: none;
+	width: 500px;
+}
+
+.editor-picks-copy {
+	padding-left: 10px;
+}
+
+.editor-picks-copy h3,
+.editor-picks-copy p {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.editor-picks-copy h3 {
+	font-size: 16px;
+	max-width: 200px;
+}
+
+.editor-picks-copy p {
+	color: #999999;
+	/* color: $color-dk-gray; */
+	font-size: .7em;
+}
+
+.editor-picks img {
+	height: 100px;
+	width: 100px;
+}
+
+.single-post article.post.type-post.format-standard {
+	height: fit-content;
+}
+
+
+@media (max-width: 767px) {
+	.author-bio-section .author-desc-box {
+		border-left: 0;
+	}
+	.page-template-news-page section.content,
+	.single-post section.content, .post-content {
+		padding-top: 20px;
+	}
+
+	.page-template-news-page.page-template-page-templatesnews-page-php div.post-info {
+		margin-bottom: 20px !important;
+	}
+
+	.post-meta {
+		align-items: center;
+		display: flex;
+		margin-bottom: 5px;
+	}
+	.post-social {
+		display: flex;
+		width: 200px;
+	}
+	.post-social .likely {
+		display: flex;
+		margin-right: 15px;
+	}
+	.rltdpstsplgn-popular-posts {
+		display: block;
+		float: left;
+	}
+	.single-post .page-title h1 {
+		text-shadow: none;
+	}
+	/*
+    .editor-picks-copy h3,
+    .editor-picks a {
+        max-width: 100%;
+    }	*/
+}
+
+@media (max-width: 991px) {
+	.author-bio-section .author-short-desc {
+		margin-bottom: 10px;
+	}
+	.post-comments .likely {
+		display: block;
+	}
+	.post-modern .post-comments .likely {
+		top: 0px;
+	}
+	body.device-sm.single-post .sidebar .widget {
+		clear: both;
+		width: 100%;
+	}
+	.post-social {
+		display: flex;
+	}
+}
+@media screen and (max-width: 767px) {
+	body.single-post section#page-title {
+		padding: 63px 0 40px 0 !important;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	body.single-post section#page-title {
+		padding: 160px 0 40px 0 !important;
+	}
+}
+
+.author section.content {
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	body.single-post p, body.single-post p a, body.single-post a, body.single-post ul li, body.single-post .post-meta .post-date span {
+		font-size: 15px !important;
+	}
+}
+
+@media screen and (min-width: 367px) and (max-width: 378px) {
+	body.single-post .post-meta .post-date {
+		width: 33% !important;
+	}
+}
+@media screen and (min-width: 357px) and (max-width: 366px) {
+	body.single-post .post-meta .post-date {
+		width: 36% !important;
+	}
+}
+@media screen and (min-width: 345px) and (max-width: 356px) {
+	body.single-post .post-meta .post-date {
+		width: 40% !important;
+	}
+}
+
+@media screen and (min-width: 332px) and (max-width: 344px) {
+	body.single-post .post-meta .post-date {
+		width: 46% !important;
+	}
+}
+
+@media screen and (max-width: 331px) {
+	body.single-post .post-meta .post-date {
+		width: 55% !important;
+	}
+}

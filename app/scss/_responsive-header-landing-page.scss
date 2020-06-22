@@ -1,0 +1,59 @@
+/*******************************************************************************/
+/* Style to fix the broken .tagline on mobile devices */
+@media screen and (max-width: 574px) {
+  .taglineLandingPage #header #logo {
+    .tagline {
+      position: absolute;
+      left: -9px;
+      top: 45px;
+      font-size: 14px;
+      border: none;
+    }
+    img {
+      margin-left: 0;
+      position: absolute;
+      left: -10px;
+      top: -12px;
+      height: 50px;
+    }
+  }
+}
+@media screen and (max-width: 921px) and (min-width: 575px) {
+  .taglineLandingPage #header #logo {
+    .tagline {
+      position: absolute !important;
+      left: 223px;
+      top: 33px;
+      font-size: 23px;
+      border-left: 1px solid rgba(93,93,94,0.25);
+      padding-left: 10px;
+    }
+    img {
+      margin-left: 0;
+      position: absolute !important;
+      left: 55px;
+      top: 1px;
+      height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 657px) and (min-width: 575px){
+  .taglineLandingPage #header #logo {
+    .tagline {
+      position: absolute !important;
+      left: 195px;
+      top: 31px;
+      font-size: 20px;
+      border-left: 1px solid rgba(93, 93, 94, 0.25);
+      padding-left: 10px;
+    }
+    img {
+      margin-left: 0;
+      position: absolute !important;
+      left: opx;
+      top: 1px;
+      height: 45px;
+    }
+  }
+}

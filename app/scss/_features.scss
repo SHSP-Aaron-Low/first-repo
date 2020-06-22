@@ -1,0 +1,116 @@
+.feature-image-left,
+.feature-image-right
+{
+  margin: auto 0;
+
+  .vc_column-inner {
+    background-size: cover;
+    min-height: 730px;
+  }
+}
+
+.feature-image-right .vc_column-inner {
+  background-position: top left;
+}
+
+.feature-image-left .vc_column-inner {
+  background-position: top right;
+}
+
+.features-testimonial {
+  .testimonial-description {
+    padding: 0;
+    border: none;
+    background: none;
+    min-height: auto;
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: 1px;
+      width: 80%;
+      color: #99979b;
+      padding: 0;
+    }
+  }
+
+  .testimonial-image {
+    margin-left: 0;
+
+    img {
+      border: 3px solid white;
+    }
+
+    h4, p {
+      color: #99979b;
+    }
+  }
+}
+
+
+.case-studies-testimonial {
+    background-color: $color-lt-gray;
+    padding: 20px 0 5px 20px;
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------------------------------------------
+  Hero images
+-------------------------------------------------------------------------*/
+.features-hero-main {
+  background-color: #33b062;
+  background: url(/wp-content/uploads/2017/09/hero-bg-features.png) top left no-repeat;
+  background: url(/wp-content/uploads/2017/09/hero-bg-features.png) top left no-repeat, -moz-linear-gradient(65deg, #33b062 50%, #84c340 100%);
+  background: url(/wp-content/uploads/2017/09/hero-bg-features.png) top left no-repeat, -webkit-gradient(65deg, #33b062 50%,#84c340 100%);
+  background: url(/wp-content/uploads/2017/09/hero-bg-features.png) top left no-repeat, -webkit-linear-gradient(65deg, #33b062 50%,#84c340 100%);
+  background: url(/wp-content/uploads/2017/09/hero-bg-features.png) top left no-repeat, -o-linear-gradient(65deg, #33b062 50%,#84c340 100%);
+  background: url(/wp-content/uploads/2017/09/hero-bg-features.png) top left no-repeat, linear-gradient(65deg, #33b062 50%,#84c340 100%);
+  background-size: auto 100%, 100% auto;
+}
+
+/* ----------------------------------------------------------------------
+  Excited testimonials styles
+-------------------------------------------------------------------------*/
+
+.testimonial-single .aet-layout .slick-list .slick-track>li {
+    margin-top: 0 !important;
+}
+
+.aet-layout-grid_float .testimonials-box li .testimonial_photo .photo-container,
+.aet-layout-grid .testimonials-box li .testimonial_photo .photo-wrapper {
+    background-color: $color-dk-purple;
+    border: 3px solid $color-dk-purple;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.aet-layout-grid_float .testimonials-box li .testimonial_photo .photo-container {
+    height: 90px;
+}
+//Image Size Fix
+.aet-layout-single .testimonials-box li .testimonial_photo .photo-container {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+/* badges */
+#aet-layout-122815 .photo-wrapper.aet-shape-square {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+} 
+
+@media screen and (max-width: 768px) {
+  .feature-image-right .vc_column-inner, .feature-image-left .vc_column-inner {
+    min-height: 460px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+    .feature-image-left .vc_column-inner, 
+    .feature-image-right .vc_column-inner {
+      min-height: 550px;
+    }
+}
+

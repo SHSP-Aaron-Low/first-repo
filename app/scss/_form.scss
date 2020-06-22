@@ -1,0 +1,608 @@
+
+/*** advanced contact form 7 ***/
+
+div.wpcf7 {
+  margin: 0;
+  padding: 0;
+}
+
+div.wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 0.2em 1em;
+}
+
+
+div.wpcf7 .screen-reader-response {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+  border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+  border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+  border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+  border: 2px solid #f7e700;
+}
+
+.wpcf7-form-control-wrap {
+  position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+  color: #f00;
+  font-size: 1em;
+  font-weight: normal;
+  display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 100;
+  border: 1px solid #ff0000;
+  background: #fff;
+  padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+span.wpcf7-list-item-label::before,
+span.wpcf7-list-item-label::after {
+  content: " ";
+}
+
+span.wpcf7-list-item-label {
+  text-transform: capitalize;
+}
+
+.wpcf7-display-none {
+  display: none;
+}
+
+
+div.wpcf7 .ajax-loader, div.wpcf7 .ajax-loader.is-active, div.wpcf7 div.ajax-error {
+  display: none;
+}
+
+div.wpcf7 .placeheld {
+  color: #888;
+}
+
+div.wpcf7 .wpcf7-recaptcha iframe {
+  margin-bottom: 0;
+}
+
+div.wpcf7 input[type="file"] {
+  cursor: pointer;
+}
+
+div.wpcf7 input[type="file"]:disabled {
+  cursor: default;
+}
+
+/*** custom ***/
+div.wpcf7-mail-sent-ok {
+  display: none !important;
+}
+
+.myform iframe {
+  border:none;
+}
+
+.wpcf7 .myform {
+  background: $color-lt-gray;
+  border-radius: 6px;
+  border: 1px solid $color-md-gray;
+  float: left;
+  margin-top: 10px;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+.wpcf7 .myform h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+  color: #f17232;
+}
+.wpcf7 h3 {
+  color: $color-md-purple;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.35em;
+  margin: 0 0 26px;
+  text-align: center;
+}
+
+.wpcf7 .myform label {
+  margin-bottom: 0;
+}
+.wpcf7 .myform label, .wpcf7 .myform p, .wpcf7 .myform span {
+  color: $color-dk-gray;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.wpcf7 .myform p, .wpcf7 .myform label, .myform button, .myform select, .myform textarea {
+  width:100%;
+}
+
+.myform input:focus , .myform select:focus , .myform textarea:focus {
+  outline: none;
+}
+
+.myform select {
+  color: $color-dk-gray;
+  border-color: $color-md-gray;
+}
+
+.myform textarea {
+  resize: none;
+  border-color: $color-md-gray ;
+  height:100px;
+}
+
+.myform textarea:focus {
+  border-color: $color-md-lime-green;
+}
+
+.myform p {
+  margin-bottom: 10px;
+}
+
+.wpcf7 .myform .wpcf7-text {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: 45px;
+  line-height: 1.42857;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+}
+.wpcf7 span.wpcf7-list-item {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+.wpcf7 .wpcf7-list-item input, .wpcf7 .wpcf7-list-item span {
+  vertical-align: middle;
+}
+.wpcf7 .myform .trust, .wpcf7 .myform .nomar {
+  margin-bottom: 0;
+}
+
+.trust:before {
+  font-family: Icomoon;
+  content: "\e66b";
+  font-size: 14px;
+  vertical-align: bottom;
+}
+
+.wpcf7 input[type="submit"], .wpcf7 .myform .submit_button {
+  width:100%;
+  text-decoration: none;
+  color: $color-white;
+  font-family: Roboto, sans-serif !important;
+  background-color: $color-lt-orange;
+  border-bottom: 2px solid $color-md-orange;
+  border-left:none;
+  border-right:none;
+  border-top:none;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  border-radius: 50px !important;
+  line-height: 20px;
+  font-size: 12px;
+  box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  outline: 0 none;
+  padding: 18px 36px;
+  position: relative;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+.wpcf7 input[type="submit"]:hover, .wpcf7 input[type="submit"]:focus {
+  box-shadow: 0 -3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.wpcf7 .trust {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.wpcf7 .trust a {
+  text-decoration: underline!important;
+  color: #666468;
+}
+
+.wpcf7 .trust img {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align:middle;
+  display:inline;
+}
+
+.wpcf7 .trust span {
+  display:inline;
+  vertical-align:1px;
+}
+
+
+.wpcf7 span.wpcf7-not-valid-tip {
+  color: #f00;
+  display: block;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.wpcf7 .wpcf7-response-output.wpcf7-validation-errors {
+  border: 0;
+  clear: both;
+  color: #f00;
+  display: block;
+  float: left;
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 0 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.wpcf7 span.wpcf7-required-radio {
+  color: #900;
+  display: block;
+  font-size: 8px;
+  font-weight: normal;
+  float: right;
+  margin-top: 3px;
+}
+
+input[type=checkbox], input[type=radio] {
+  margin: 4px 0 0;
+  margin-top: 1px\9;
+  line-height: normal;
+  float: left;
+  margin-right: 10px;
+}
+
+
+.wpcf7 .myform .wpcf7-text.form-control:focus {
+  border:1px solid $color-lt-lime-green;
+  outline: none;
+}
+  //jquery validation for contact form
+
+
+.wp-list-table .validation_rules li{ font-size:13px; line-height:18px; padding-bottom:10px;}
+ul.jvcfz_list{ list-style-type:square;margin-left: 2em;}
+table.jvcf7_form td{ border:none !important; padding:5px;}
+.wpcf7-form label.error{color:#900; font-size:11px; float:none; padding-left:5px;}
+
+/* Theme 1 */
+.theme_1.wpcf7-form input.error, .theme_1.wpcf7-form select.error, .theme_1.wpcf7-form textarea.error {
+  border:1px solid #900;
+  outline: none;
+}
+
+/*DON't show error msg */
+.noErrorMsg.wpcf7-form label.error{
+  display:none !important;
+  height:0px !important;
+  width:0px !important;
+  overflow:hidden !important;
+}
+
+
+
+.jvcf7_btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  display:inline-block;
+  width:170px;
+
+}
+
+.jvcf7_btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  color: #ffffff;
+}
+// Landing Page Form, Resource form
+.page-template-landing-page, .resource-page, .single-resource {
+  .overflow {
+    overflow: visible !important;
+  }
+  .myform {
+    position: absolute;
+    left: 0;
+    right: 0;
+    h3 {
+      font-size: 30px !important;
+      margin-bottom: 5px;
+    }
+    .form-sub-heading {
+      text-align: center;
+      margin-bottom: 3em;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    .image-form-arrow {
+      display: block;
+      position: relative;
+      &:after {
+        content: '';
+        background: url(../polo-child/img/arrow-2.png);
+        background-size: cover;
+        bottom: 0;
+        width: 90px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+        height: 140px;
+      }
+    }
+    img {
+      max-width: 75%;
+      margin: 8% auto !important;
+      border: 1px solid white;
+      box-shadow: #4d48528c 0px 0px 25px;
+      padding: 0 !important;
+      display: block;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .page-template-landing-page, .resource-page {
+    .myform {
+      position: relative;
+      h3 {
+        padding: 0!important;
+        font-size: 20px !important;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .single-resource .myform {
+      position: relative;
+  }  
+}
+
+.myform {
+    p.form-sub-heading {
+      text-align: center;
+    }
+}
+
+/** SS Forms **/
+.webinar-form {
+		background: $color-md-lime-green;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: 1px solid $color-md-lime-green;
+		padding: 5px 10px;
+		width: 100%;
+		z-index: 9999;
+}
+.webinar-form.green {
+		background: $color-md-lime-green;
+		border: 1px solid $color-md-lime-green;
+}
+.webinar-form.white {
+		background: $color-white;
+		border: 1px solid $color-md-gray;
+    box-shadow: 0 0 3px $color-md-gray;
+}
+
+.webinar-form iframe {
+    border: none !important;
+}
+
+.webinar-form .arrowform,
+.wpcf7 .arrowform {
+	position: absolute;
+	top: -15px;
+	right: 15px;
+	max-width: 85px;
+}
+.webinar-form .form-heading,
+.wpcf7 .form-heading {
+		font-size: 30px;
+		font-weight: 700;
+    padding: 20px 20px 0;
+}
+
+/* CUSTOM RADIO */
+
+.radio-group {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+/* CUSTOM INPUTS (MOBILE) */
+
+@media only screen and (max-width: 768px) {
+
+  .wpcf7 .mobile .wpcf7-text {
+    border-left-width: 0;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 0;
+  }
+
+  .mobile {
+
+    .side-by-side {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .side-by-side label {
+      background-color: #ebebeb;
+      border: 1px solid #d2d2d2;
+      border-right-width: 0;
+      border-radius: 4px 0 0 4px;
+      height: 45px;
+      padding: 12px 10px;
+      width: 100px !important;
+    }
+
+    /* CUSTOM RADIO (MOBILE) */
+
+    .radio-group {
+      text-align: center;
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    .radio-container {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      min-height: 100%;
+      z-index: -1;
+    }
+    .wpcf7-radio {
+      display: flex;
+    }
+    .wpcf7-list-item-label {
+      display: block;
+      width: 100%;
+      background-color: white;
+      padding: 12px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      font-family: Arial;
+      font-size: 16px;
+    }
+    input[type=radio]:checked + .wpcf7-list-item-label {
+      background-color: #94d273;
+      color: white;
+    }
+    .first span.wpcf7-list-item-label {
+      border: 1px solid #c8c8c8;
+      border-radius: 50px 0 0 50px;
+      border-right-width: 0;
+      text-align: center;
+      width: 100px;
+    }
+    .last span.wpcf7-list-item-label {
+      border: 1px solid #c8c8c8;
+      border-radius: 0 50px 50px 0;
+      text-align: center;
+      width: 100px;
+    }
+    span.wpcf7-list-item.first,
+    span.wpcf7-list-item.last {
+      margin: 0;
+    }
+    .wpcf7 input[type="submit"], .wpcf7 .myform .submit_button {
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+}
+
+
+/** End SS Forms **/
+
+/*******************************************/
+/*** Thi Part of the CSS is from the WP Page Editor for the Schedule Demo Agency Page ***/
+.resource-template-default.single-resource.confirmation .wpb_wrapper .wpcf7 p {
+  color: #666468 !important;
+}
+.form-bottom-bg {
+  border-radius: 0 0 5px 5px !important;
+  margin-bottom: 0px !important;
+  padding-top: 1.75em !important;
+  padding-bottom: 1.5em !important;
+  background-color: #fff !important;
+}
+.opensans {
+  font-family:"Open Sans",Helvetica,Arial,sans-serif;
+}
+
+.form-top-bg {
+  border-radius: 5px 5px 0 0 !important;
+  margin-bottom: 0px !important;
+  padding-top: 1.75em !important;
+  padding-bottom: 20px !important;
+  background-color: #f5f5f5 !important;
+}
+
+select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required {
+  color: #777;
+}
+
+.form-bottom-bg .wpcf7 span.wpcf7-list-item {
+  font-size: 13px;
+  width: 45%;
+}
+
+@media only screen and (max-width: 500px) {
+  .wpcf7 span.wpcf7-list-item {
+    width: 100%;
+  }
+}
+/*** END of the CSS from the WP Page Editor for the Schedule Demo Agency Page ***/
+
+/**************************************************************************************************/
+
+/*** Add class "unsetPosition" that can be added to the forms that are getting cutoff the page. ***/
+.unsetPosition {
+  position: unset !important;
+  left: 0;
+  right: 0;
+}
+/***END of class "unsetPosition" that can be added to the forms that are getting cutoff the page.***/
+
+/***************************************************************************************************/

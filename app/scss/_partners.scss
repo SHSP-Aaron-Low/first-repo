@@ -1,0 +1,31 @@
+/***********************************************************
+
+  Styles for Partner / Certification pages
+
+***********************************************************/
+
+.text-color-dk {
+    color: $color-dk-gray;
+}
+
+.benefits-text p {
+    padding: 10px 40px;
+}
+
+.footnote {
+    font-size: 12px;
+    font-weight: 100;
+    margin: 20px;
+}
+
+@media screen and (max-width: 575px) {
+    .ss-order-list ul {
+        margin-left: 2em;
+    }
+}    
+
+
+ 
+
+
+

@@ -1,0 +1,45 @@
+/* ----------------------------------------------------------------------
+ Styles for Jobs
+ ----------------------------------------------------------------------*/
+
+#jobs-page .isotope.job-items {
+	width: 100%;
+}
+#jobs-page .isotope .job-item {
+	width: 100% important;
+}
+.single-job section.content {
+  padding-top: 50px !important;
+}
+
+.job-category a {
+  color: #666468 !important;
+}
+
+#jobs-page #isotope .job-item, #jobs-page #isotope .post-item {
+	width: 100% !important;
+}
+
+.job-item .clearfix {
+  line-height: 0;
+}
+
+.job-form {
+	padding: 0px 10px!important;
+}
+
+@media screen and (max-width: 991px) {
+	.job-item {
+		width: 100% !important;
+	}
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 767px) {
+	.nav-main-menu-responsive.careers .btn-get-a-demo-mobile {
+		display: none;
+	}
+}
+/* ----------------------------------------------------------------------
+ End styles for Jobs
+ ----------------------------------------------------------------------*/

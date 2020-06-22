@@ -1,0 +1,82 @@
+/************************************
+Investors Site
+************************************/
+
+.investors-recent-posts .widgettitle {
+    display: none;
+}
+.page-template-investors .post-content {
+    padding-top: 0px !important;
+}
+.page-template-investors.archive section.content {
+		padding-top: 50px !important;
+}
+
+/** Stock ticker **/
+.stock-ticker-wrapper ul.stock_ticker {
+		padding-left: 0 !important;
+		margin: 0 !important;
+}
+.stock-ticker-wrapper ul.stock_ticker li.plus .sqitem,
+.stock-ticker-wrapper ul.stock_ticker li.minus .sqitem {
+    padding-left: 28px;
+}
+.stock-ticker-wrapper ul.stock_ticker li.plus .sqitem,
+.stock-ticker-wrapper ul.stock_ticker li.plus:before {
+    color: #84c340 !important;
+}
+.stock-ticker-wrapper ul.stock_ticker li.minus .sqitem,
+    .stock-ticker-wrapper ul.stock_ticker li.minus:before {
+    color: #d8442f !important;
+}
+.stock-ticker-wrapper ul.stock_ticker li:before {
+    display: none;
+}
+.stock-ticker-wrapper ul.stock_ticker li.plus:before {
+    display: block;
+		content: "\f04b";
+		transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);		
+    
+}
+.stock-ticker-wrapper ul.stock_ticker li.minus:before {
+    display: block;
+    content: "\f04b";
+		transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+}
+.stock-ticker-wrapper ul.stock_ticker li:before {
+		font-family: 'fontAwesome' !important;
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: -2px;
+}
+/** END Stock ticker **/
+
+/** List investor materials **/
+.page-template-investors .content ul {
+	padding-left: 0;
+}
+.page-template-investors .content .list-chevron ul {
+	padding-left: 20px;
+}
+.page-template-investors .content ul li { 
+    margin-bottom: 5px;
+		border-bottom: 0;
+    padding: 0px 0 10px 2px;
+}
+.page-template-investors .content ul li a {
+    color: #666468;
+}
+.page-template-investors .content ul li a:hover {
+    color: #84c340;
+}
+/** END List investor materials **/
+
+@media (max-width: 1199px) and (min-width: 992px) {
+		.page-template-investors #mainMenu>ul>li>a {
+				padding: 10px 5px;
+		}
+}

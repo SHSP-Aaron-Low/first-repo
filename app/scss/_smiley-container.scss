@@ -1,0 +1,56 @@
+/*ratings feedback widget*/
+
+.schedExperienceWrapper {
+  border: 2px solid #e2e2e2;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.schedExperienceWrapper .schedExperienceTitle {
+  border: 2px solid #e2e2e2;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  font-size: 24px;
+  color: #460e56;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+}
+.smileyWrapper {
+  margin:0 auto;
+  margin-bottom: 45px;
+  margin-top: 40px;
+  padding: 0;
+  text-align:center;
+  width: 345px;
+}
+.smileyElement {
+  margin: 0 1.5%;
+  width: 15%;
+  display: inline-block;
+  position: relative;
+}
+
+.smileyElement img{
+  display: block;
+  max-width: 100%;
+}
+
+.smileyElementText {
+  visibility: hidden;
+  width: 120px;
+  color: #47475a;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.smileyElement:hover .smileyElementText {
+  visibility: visible;
+}
